@@ -1,0 +1,38 @@
+<html>
+<head>
+
+
+<script language="JavaScript" src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<style>
+	#logo-container
+	{
+		padding-top: 40%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#logo-image
+	{
+		width: 100%;
+		opacity: 0.1;
+	}	
+</style>
+
+
+</head>
+<body>
+
+<div id="logo-container">
+	<img id="logo-image" src ="img/cartman.svg" width="50%">
+</div>
+<script>
+	function navPage()
+	{
+		console.log("Hello Darragh!!");
+	}	
+	
+	gsap.to("#logo-container",{duration:2,  x:300, opacity:0.5, onComplete: navPage});
+ </script>
+
+</body>
+</html>
